@@ -1,14 +1,11 @@
 import { NextApiResponse } from 'next';
-import { getServerSession } from 'next-auth';
 import { NextResponse } from 'next/server';
-import { handler } from './app/api/auth/[...nextauth]/route';
 import type { NextRequest } from 'next/server';
 
 const onboardingRoute = ['/onboard'];
 const authenticatedRoute = ['/dashboard', '/'];
 const publicRoute = ['/login'];
 
-// This function can be marked `async` if using `await` inside
 export async function middleware(
   request: NextRequest,
   response: NextApiResponse

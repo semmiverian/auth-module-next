@@ -1,4 +1,4 @@
-import { AuthenticatedRoute } from '@/AuthenticatedRoute';
+import { AuthenticatedRoute } from '@/route/AuthenticatedRoute';
 import { Login, Welcome } from '@/components';
 
 const Dashboard = () => {

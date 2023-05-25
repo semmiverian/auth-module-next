@@ -1,4 +1,4 @@
-import { OnBoardRoute } from '@/OnboardRoute';
+import { OnBoardRoute } from '@/route/OnboardRoute';
 
 const Onboard = () => {
   return (
