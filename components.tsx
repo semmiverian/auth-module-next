@@ -35,7 +35,6 @@ export const Login = () => {
 
 export const Welcome = () => {
   const { data: session, status } = useSession();
-  console.log('file: components.tsx:38 ~ Welcome ~ session:', session);
 
   if (status === 'loading') {
     return <h1>Loading</h1>;

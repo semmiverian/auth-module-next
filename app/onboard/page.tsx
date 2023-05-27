@@ -4,10 +4,7 @@ const Onboard = () => {
   console.log('Onboard called');
   return (
     <div>
-      {/* @ts-expect-error Server Component */}
-      <OnBoardRoute>
-        <h1>Onboard Page</h1>
-      </OnBoardRoute>
+      <h1>Onboard Page</h1>
     </div>
   );
 };
