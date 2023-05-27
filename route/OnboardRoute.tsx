@@ -4,7 +4,7 @@ import { redirect } from 'next/navigation';
 
 export const OnBoardRoute = async (props: any) => {
   const session = await getServerSession(handler);
-  const finishOnboard = true;
+  const finishOnboard = false;
 
   if (!session) {
     return redirect('/login');

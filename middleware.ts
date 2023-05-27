@@ -11,7 +11,6 @@ export async function middleware(
   response: NextApiResponse
 ) {
   if (onboardingRoute.includes(request.nextUrl.pathname)) {
-    console.log('onboarding route redirection logic called?');
     const finishOnboarding = false; // We can grab this value from cookie
     if (finishOnboarding) {
       return NextResponse.redirect(new URL('/dashboard', request.url));

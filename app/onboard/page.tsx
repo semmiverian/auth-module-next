@@ -1,6 +1,7 @@
 import { OnBoardRoute } from '@/route/OnboardRoute';
 
 const Onboard = () => {
+  console.log('Onboard called');
   return (
     <div>
       {/* @ts-expect-error Server Component */}
