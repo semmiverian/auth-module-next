@@ -38,8 +38,8 @@ export async function middleware(
 }
 
 const redirectionLogic = (request: NextRequest) => {
-  const loggedIn = true; // We can grab this value from cookie
-  const needToVerifyOtp = true;
+  const loggedIn = false; // We can grab this value from cookie
+  const needToVerifyOtp = false;
   const needToResetPassword = false;
 
   if (loggedIn) {
